@@ -23,3 +23,11 @@ function limparTabuada(){
     message = "";
     output.innerHTML = message;
 }
+document.addEventListener("keydown", function(e){
+    if(e.key === "Enter" && input.valueAsNumber >= 0){
+        criarTabuada();
+    }else{
+        output.innerHTML = error;
+    }
+   
+})
