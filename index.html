@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <title>Multi Calculatrix</title>
+</head>
+<body>
+    <section class="multiTable__container">
+        <h2 class="text__label">Digite um número inteiro para calcular:</h2>
+        <input type="number" name="input" id="input" class = "inputNumber">
+    <section class="btn__wrapper">
+        
+            <button class="btn btn__create" onclick="criarTabuada()">Criar Tabuada</button>
+            <button class="btn btn__clean" onclick="limparTabuada()">Limpar Tabuada</button>
+    </section>
+        <div class="result__wrapper" id="output"></div>
+    </section>
+    <script src="./main.js"></script>
+    
+</body>
+</html>

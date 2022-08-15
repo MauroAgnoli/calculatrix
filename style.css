@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray
+}
+.multiTable__container{
+    background-color: whitesmoke;
+    width: 30em;
+    height: auto;
+    margin: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(114, 114, 114);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    border-radius: 16px;
+}
+.text__label{
+    font-size: 30px;
+    margin-bottom: 0.7em;
+    text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+.inputNumber{
+    height: 50px;
+    width: 10em;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.7);
+}
+.btn__wrapper{
+    width: 20em;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+}
+.btn{
+    padding: 5px;
+    border-radius: 5px;
+    width: 150px;
+    color: aliceblue;
+    font-size: 16px;
+    box-shadow: inset -1px -1px 1px rgba(192, 192, 192, 0.7);
+}
+.btn__create{
+    background-color: rgba(0, 128, 0, 0.76);
+}
+.btn__clean{
+    background-color: rgba(255, 0, 0, 0.76);
+}
+.result__wrapper{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    height: 15em;
+}
+
+@media only screen and (max-width: 725px) {
+    body{
+        background-color: rgba(211, 211, 211, 0.5);
+    }
+    .multiTable__container{
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+    }
+}
