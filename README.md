@@ -1,2 +1,2 @@
-# calculatrix
-A simple project of multi-calculator
+# Calculatrix
+A simple project of multi-calculator.
