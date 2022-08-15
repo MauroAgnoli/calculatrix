@@ -1,6 +1,7 @@
 let output = document.querySelector('#output');
 let message = "";
 let input = document.querySelector('#input');
+const delayInMilliseconds = 1000; //1 second
 const error = "<p style ='color:red; font-size:34px'>Digite algum valor</p>";
 function criarTabuada(){
 
@@ -24,10 +25,14 @@ function limparTabuada(){
     output.innerHTML = message;
 }
 document.addEventListener("keydown", function(e){
+
+setTimeout(function() {
+    //your code to be executed after 1 second
     if(e.key === "Enter" && input.valueAsNumber >= 0){
         criarTabuada();
-    }else{
+    }else if(e.key === "Enter" && !(input.valueAsNumber >= 0)){
         output.innerHTML = error;
     }
+  }, delayInMilliseconds);
    
 })
