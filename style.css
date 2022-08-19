@@ -65,7 +65,7 @@ input[type=number]{
     font-size: 16px;
     box-shadow: inset -1px -1px 1px rgba(192, 192, 192, 0.7);
 }
-.btn__create{95
+.btn__create{
     background-color: rgba(0, 128, 0, 0.76);
 }
 .btn__clean{
