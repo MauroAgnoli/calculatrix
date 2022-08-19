@@ -32,6 +32,5 @@ document.addEventListener("keydown", function(e){
     }else if(e.key === "Enter" && !(input.valueAsNumber >= 0)){
         output.innerHTML = error;
     }
-    input.blur();
    
 })
