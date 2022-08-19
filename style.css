@@ -80,6 +80,10 @@ input[type=number]{
     font-size: 22px;
     height: 15em;
 }
+.text__wrapper{
+    margin: 0 auto;
+    width: 80%;
+}
 
 @media only screen and (max-width: 725px) {
     body{
