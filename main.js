@@ -29,7 +29,9 @@ document.addEventListener("keydown", function(e){
 
     if(e.key === "Enter" && input.valueAsNumber >= 0){
         criarTabuada();
+        input.blur()
     }else if(e.key === "Enter" && !(input.valueAsNumber >= 0)){
+        input.blur()
         output.innerHTML = error;
     }
    
